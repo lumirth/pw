@@ -1,0 +1,12 @@
+/.local/
+/build/
+/generated/
+__pycache__/
+*.pyc
+.DS_Store
+/build.ninja
+/.ninja_log
+/.ninja_deps
+/.venv/
+/assets/local/
+/.ruff_cache/

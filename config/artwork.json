@@ -1,0 +1,72 @@
+[
+  {
+    "name": "walkerImage",
+    "file": "walker.ncg",
+    "format": "column-2bpp",
+    "width": 32,
+    "height": 32,
+    "offset": 47988,
+    "size": 256,
+    "required_bytes": [
+      {
+        "offset": 83,
+        "value": 2,
+        "purpose": "rest-note duration divisor"
+      }
+    ]
+  },
+  {
+    "name": "neutralFace",
+    "file": "face-neutral.ncg",
+    "format": "column-2bpp",
+    "width": 16,
+    "height": 8,
+    "offset": 48244,
+    "size": 32
+  },
+  {
+    "name": "smileFace",
+    "file": "face-smile.ncg",
+    "format": "column-2bpp",
+    "width": 16,
+    "height": 8,
+    "offset": 48276,
+    "size": 32
+  },
+  {
+    "name": "frownFace",
+    "file": "face-frown.ncg",
+    "format": "column-2bpp",
+    "width": 16,
+    "height": 8,
+    "offset": 48308,
+    "size": 32
+  },
+  {
+    "name": "buttonArrow",
+    "file": "button-arrow.ncg",
+    "format": "column-2bpp",
+    "width": 8,
+    "height": 8,
+    "offset": 48340,
+    "size": 16
+  },
+  {
+    "name": "irSignal",
+    "file": "ir-signal.ncg",
+    "format": "column-2bpp",
+    "width": 8,
+    "height": 8,
+    "offset": 48356,
+    "size": 16
+  },
+  {
+    "name": "alphanumericFont",
+    "file": "font.bmp",
+    "format": "font-1bpp",
+    "width": 108,
+    "height": 8,
+    "offset": 48372,
+    "size": 108
+  }
+]

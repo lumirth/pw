@@ -1,0 +1,24 @@
+[project]
+name = "pw-build"
+version = "0.0.0"
+description = "Tools for building the Pokewalker firmware"
+requires-python = ">=3.11"
+dependencies = [
+  "ninja>=1.11,<2",
+  "pillow>=11,<13",
+]
+
+[dependency-groups]
+dev = ["clang-format==21.1.8", "ruff>=0.14,<1"]
+
+[tool.uv]
+package = false
+default-groups = []
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+include = ["configure.py", "tools/*.py", "tests/*.py", "assets/placeholders/*.py"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

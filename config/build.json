@@ -1,0 +1,43 @@
+{
+  "target": {
+    "size": 49152,
+    "sha256": "f9e210a3b74afbbd12c5a66a51cc05cb9fbac986805ff0a3bfb4be6074d15607"
+  },
+  "source_flags": {
+    "h8_rominfo.c": [
+      "-section=const=M"
+    ],
+    "pw_fourier.c": [
+      "-speed=shift,loop=2"
+    ],
+    "pw_pedometer.c": [
+      "-speed"
+    ]
+  },
+  "compiler_flags": [
+    "-cpu=300HN",
+    "-lang=c",
+    "-outcode=sjis",
+    "-nolist",
+    "-chgincpath",
+    "-nologo",
+    "-optimize=1",
+    "-regparam=2",
+    "-stack=medium",
+    "-code=machinecode",
+    "-goptimize"
+  ],
+  "linker_options": [
+    "nodebug",
+    "rom D=R",
+    "optimize symbol_delete,register,same_code",
+    "start M,PIntPRG,P,C,C$DSEC,C$BSEC,D/00050",
+    "start B/0F780",
+    "start R/0FEF0",
+    "start B_NOINIT,S/0FEF4"
+  ],
+  "include_dirs": [
+    "include",
+    "generated"
+  ]
+}
